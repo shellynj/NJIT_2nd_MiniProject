@@ -5,4 +5,4 @@ python:
 
 script: 
 
-  - python 2ndminiproject
+  - python NJIT_2nd_MiniProject
