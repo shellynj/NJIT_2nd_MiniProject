@@ -5,7 +5,7 @@
 #### Objective:
 For this program you need to work in a team of 2-3 to create a statistical calculator. In this project you need to either decorate or extend the calculator class you previously created individually. For each calculation you need to create at least one test to check for the correct value and another test to check for invalid input. Invalid input should throw an exception with a description of the problem.
 
-####Your program needs to calculate the following:
+#### Your program needs to calculate the following:
 
 * Population Mean
 * Median
@@ -23,7 +23,7 @@ For this program you need to work in a team of 2-3 to create a statistical calcu
 * Sample Standard Deviation
 * Variance of sample proportion
 
-####In addition, your team must update your mini-project 1 with definitions and examples of the following terms:
+#### In addition, your team must update your mini-project 1 with definitions and examples of the following terms:
 
 * How Python uses Indentation to control Flow
 * Don't Repeat Yourself
@@ -42,7 +42,7 @@ For this program you need to work in a team of 2-3 to create a statistical calcu
 * CSV Files
 * Reading Files
 
-####Submission  and Project Requirements:
+#### Submission  and Project Requirements:
 
 [ ] You must submit a link to your Github for Mini Project 1 (updated terms) and 2 (statistical calculator)
 [ ] You must submit a link to Travis CI running your tests successfully
