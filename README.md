@@ -60,7 +60,9 @@ Each required section can be found by clicking on the Index links below.</br>
 
 #### Index:
 * [2nd Mini Project Defenitions](https://github.com/mykolatyniv/NJIT-1st-MiniProject/blob/master/calculator.md)
-* [Test](src/Calculator.py)
+* [Calculator Module](src/Calculator.py)
+* [Statistics  Module](src/Statistics.py)
+* [Reader Module](src/CsvReader.py)
 
  <a name="contributions">
  
