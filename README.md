@@ -71,6 +71,7 @@ Each required section can be found by clicking on the Index links below.</br>
 #### Change Log:
 |  Date  | Details  |  
 |---|---|
+|  10/28/2019  | Mykola Lupak uploaded new files |  
 |  10/28/2019  | Mykola Lupak created README file and updated | 
 |  10/28/2019  | Mykola Lupak created new repository |  
 
