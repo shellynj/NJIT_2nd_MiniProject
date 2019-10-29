@@ -13,7 +13,7 @@ def population_standard_deviation(a, b):
 def variance_of_population_proportion(a, b):
     return c
 
-def zscore(a, b):
+def z_score(a, b):
     return c
 
 def standardized_score(a, b):
@@ -28,7 +28,7 @@ def confidence_interval(a, b):
 def population_variance(a, b):
     return c
 
-def pvalue(a, b):
+def p_value(a, b):
     return c
 
 def proportion(a, b):
@@ -50,7 +50,7 @@ class Calculator:
         pass
 
     def mean(self, a, b):
-        self.result = populationmean(a, b)
+        self.result = population_mean(a, b)
         return self.result
 
     def med(self, a, b):
@@ -70,7 +70,7 @@ class Calculator:
         return self.result
 
     def score(self, a, b):
-        self.result = zscore(a, b)
+        self.result = z_score(a, b)
         return self.result
 
     def standardized(self, a, b):
@@ -90,7 +90,7 @@ class Calculator:
         return self.result
 
     def value(self, a, b):
-        self.result = pvalue(a, b)
+        self.result = p_value(a, b)
         return self.result
 
     def prop(self, a, b):
