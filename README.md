@@ -59,14 +59,12 @@ Each required section can be found by clicking on the Index links below.</br>
 *Project group of two members
 
 #### Index:
-* [Test](/test.md)
+* [Test](src/Calculator.py)
  <a name="contributions">
  
 #### Contributions:
 - **Readme File - Mykola Lupak**
 - **Sources - Mykola Lupak & Michelle Boykins**
-
-<a name="changelog">
  
 #### Change Log:
 |  Date  | Details  |  
