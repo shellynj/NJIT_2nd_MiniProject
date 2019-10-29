@@ -7,7 +7,7 @@ def addition(a, b):
 def subtraction(a, b):
     a = int(a)
     b = int(b)
-    c = a - b
+    c = b - a
     return c
 
 def multiplication(a, b):
@@ -19,12 +19,12 @@ def multiplication(a, b):
 def division(a, b):
     a = int(a)
     b = int(b)
-    c = a / b
+    c = b / a
     return c
 
 def square(a):
     a = int(a)
-    c = a**2
+    c = a ** 2
     return c
 
 def square_root(a):
@@ -46,19 +46,18 @@ class Calculator:
         self.result = subtraction(a, b)
         return self.result
 
-    def multiplication(self, a, b):
+    def multiple(self, a, b):
         self.result = multiplication(a, b)
         return self.result
 
-    def division(self, a, b):
+    def div(self, a, b):
         self.result = division(a, b)
         return self.result
 
-    def square(self, a):
+    def squaring(self, a):
         self.result = square(a)
         return self.result
 
-    def square_root(self, a):
+    def square_rooting(self, a):
         self.result = square_root(a)
         return self.result
-    
