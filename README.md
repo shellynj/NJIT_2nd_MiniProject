@@ -70,6 +70,9 @@ Each required section can be found by clicking on the Index links below.</br>
 #### Contributions:
 - **Readme File - Mykola Lupak**
 - **Sources - Mykola Lupak & Michelle Boykins**
+- **Travis - Mykola Lupak**
+- **2nd mini project definitions - Mykola Lupak & Michelle Boykins**
+- **src folder files - Mykola Lupak & Michelle Boykins**
  
 #### Change Log:
 |  Date  | Details  |  
