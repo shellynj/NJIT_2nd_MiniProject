@@ -5,8 +5,8 @@
 #### Objective:
 For this program you need to work in a team of 2-3 to create a statistical calculator. In this project you need to either decorate or extend the calculator class you previously created individually. For each calculation you need to create at least one test to check for the correct value and another test to check for invalid input. Invalid input should throw an exception with a description of the problem.
 
-####Travis 
-[![Build Status](https://travis-ci.org/mykolatyniv/NJIT_2nd_MiniProject.svg?branch=master)](https://travis-ci.org/mykolatyniv/NJIT_2nd_MiniProject)
+### Travis 
+* [![Build Status](https://travis-ci.org/mykolatyniv/NJIT_2nd_MiniProject.svg?branch=master)](https://travis-ci.org/mykolatyniv/NJIT_2nd_MiniProject)
 
 
 
@@ -49,16 +49,16 @@ For this program you need to work in a team of 2-3 to create a statistical calcu
 
 #### Submission  and Project Requirements:
 
-- [ ]  You must submit a link to your Github for Mini Project 1 (updated terms) and 2 (statistical calculator) 
-- [ ] You must submit a link to Travis CI running your tests successfully
-- [ ] You must put a travis CI build status on your Readme.MD file
-- [ ] You must have commits labeled feature, fix, or task 
+- [x]  You must submit a link to your Github for Mini Project 1 (updated terms) and 2 (statistical calculator) 
+- [x] You must submit a link to Travis CI running your tests successfully
+- [x] You must put a travis CI build status on your Readme.MD file
+- [x] You must have commits labeled feature, fix, or task 
 - [x] You must not repeat yourself
 - [x] You need a module for reading CSV files
 - [x] You need a module for statistics
 - [x] You need a module for calculator
 - [ ] You need to throw exceptions when there is a problem such as file not found.
-- [ ] You must have tests for you calculator, statistics, and CSV file reading modules.   
+- [x] You must have tests for you calculator, statistics, and CSV file reading modules.   
 
 Each required section can be found by clicking on the Index links below.</br> 
 *Project group of two members
@@ -68,8 +68,6 @@ Each required section can be found by clicking on the Index links below.</br>
 * [Calculator Module](src/Calculator.py)
 * [Statistics  Module](src/Statistics.py)
 * [Reader Module](src/CsvReader.py)
-
- <a name="contributions">
  
 #### Contributions:
 - **Readme File - Mykola Lupak**
