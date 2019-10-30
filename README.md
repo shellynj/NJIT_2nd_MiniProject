@@ -2,13 +2,11 @@
 ### IS601 - 851
 ### NJIT 2nd MiniProject
 ### Project Members: Michelle Boykins and Mykola Lupak
-#### Objective:
-For this program you need to work in a team of 2-3 to create a statistical calculator. In this project you need to either decorate or extend the calculator class you previously created individually. For each calculation you need to create at least one test to check for the correct value and another test to check for invalid input. Invalid input should throw an exception with a description of the problem.
-
 ### Travis 
 * [![Build Status](https://travis-ci.org/mykolatyniv/NJIT_2nd_MiniProject.svg?branch=master)](https://travis-ci.org/mykolatyniv/NJIT_2nd_MiniProject)
 
-
+#### Objective:
+For this program you need to work in a team of 2-3 to create a statistical calculator. In this project you need to either decorate or extend the calculator class you previously created individually. For each calculation you need to create at least one test to check for the correct value and another test to check for invalid input. Invalid input should throw an exception with a description of the problem.
 
 #### Your program needs to calculate the following:
 
