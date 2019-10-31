@@ -64,7 +64,9 @@ Each required section can be found by clicking on the Index links below.</br>
 #### Index:
 * [2nd Mini Project Defenitions](https://github.com/mykolatyniv/NJIT-1st-MiniProject/blob/master/calculator.md)
 * [Calculator Module](src/Calculator.py)
-* [Statistics  Module](src/StatiscticsTests.py)
+* [Calculator Test File Module](src/CalculatorTests.py)
+* [Statistics  Module](src/Statistics.py)
+* [Statistics Test File](src/StatiscticsTests.py)
 * [Reader Module](src/CsvReader.py)
  
 #### Contributions:
@@ -77,6 +79,8 @@ Each required section can be found by clicking on the Index links below.</br>
 #### Change Log:
 |  Date  | Details  |  
 |---|---|
+ 10/28/2019  | Mykola Lupak updated Readme file | 
+|  10/30/2019  | Mykola Lupak Created Statistics and Statistics Test file |  
 |  10/30/2019  | Mykola Lupak Created Travis file and signup on travis site |  
 |  10/28/2019  | Mykola Lupak uploaded new files |  
 |  10/28/2019  | Mykola Lupak created README file and updated | 

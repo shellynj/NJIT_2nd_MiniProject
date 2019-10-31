@@ -66,15 +66,3 @@ class Calculator:
     def square_rooting(self, a):
         self.result = square_root(a)
         return self.result
-
-    def mean(self, a, b):
-        self.result = population_mean(a, b)
-        return self.result
-
-    def med(self, a, b):
-        self.result = median(a, b)
-        return self.result
-
-    def mod(self, a, b):
-        self.result = mode(a, b)
-        return self.result

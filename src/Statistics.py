@@ -1,46 +1,61 @@
 def population_mean(a, b):
+    c= a + b
     return c
 
 def median(a, b):
+    c= a + b
     return c
 
 def mode(a, b):
+    c= a + b
     return c
 
 def population_standard_deviation(a, b):
+    c= a + b
     return c
 
 def variance_of_population_proportion(a, b):
+    c= a + b
     return c
 
 def z_score(a, b):
+    c= a + b
     return c
 
 def standardized_score(a, b):
+    c= a + b
     return c
 
-def population_correlation_coefficient(a, b):
+def correlation_coefficient(a, b):
+    c= a + b
     return c
 
 def confidence_interval(a, b):
+    c= a + b
     return c
 
 def population_variance(a, b):
+    c= a + b
     return c
 
 def p_value(a, b):
+    c= a + b
     return c
 
 def proportion(a, b):
+    c= a + b
     return c
 
 def sample_mean(a, b):
+    c= a + b
     return c
 
 def sample_standard_deviation(a, b):
+    c= a + b
     return c
 
 def variance_of_sample_proportion(a, b):
+    c= a + b
     return c
 
 class Statistics:
@@ -48,6 +63,18 @@ class Statistics:
 
     def __init__(self):
         pass
+
+    def mean(self, a, b):
+        self.result = population_mean(a, b)
+        return self.result
+
+    def med(self, a, b):
+        self.result = median(a, b)
+        return self.result
+
+    def mod(self, a, b):
+        self.result = mode(a, b)
+        return self.result
 
     def population(self, a, b):
         self.result = population_standard_deviation(a, b)
@@ -65,8 +92,8 @@ class Statistics:
         self.result = standardized_score(a, b)
         return self.result
 
-    def population(self, a, b):
-        self.result = population_correlation_coefficient(a, b)
+    def population1(self, a, b):
+        self.result = correlation_coefficient(a, b)
         return self.result
 
     def confidence(self, a, b):
@@ -85,7 +112,7 @@ class Statistics:
         self.result = proportion(a, b)
         return self.result
 
-    def smean(self, a, b):
+    def s_mean(self, a, b):
         self.result = sample_mean(a, b)
         return self.result
 
@@ -93,6 +120,6 @@ class Statistics:
         self.result = sample_standard_deviation(a, b)
         return self.result
 
-    def variance(self, a, b):
+    def variance1(self, a, b):
         self.result = variance_of_sample_proportion(a, b)
         return self.result

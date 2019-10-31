@@ -1,14 +1,14 @@
 import unittest
-from Calculator import Calculator
+from Statistics import Statistics
 from CsvReader import CsvReader
 from pprint import pprint
 
 class MyTestCase(unittest.TestCase):
     def setUp(self) -> None:
-        self.calculator = Calculator()
+        self.calculator = Statistics()
 
     def test_instantiate_calculator(self):
-        self.assertIsInstance(self.calculator, Calculator)
+        self.assertIsInstance(self.calculator, Statistics)
 
     def test_population_mean(self):
         test_data = CsvReader('/src/test.csv').data
@@ -59,11 +59,11 @@ class MyTestCase(unittest.TestCase):
            self.assertEqual(self.calculator.standardized(row['Value 1'], row['Value 2']), int(row['Result']))
            self.assertEqual(self.calculator.result, int(row['Result']))
 
-    def test_population_correlation_coefficient(self):
+    def test_correlation_coefficient(self):
         test_data = CsvReader('').data
         pprint(test_data)
         for row in test_data:
-           self.assertEqual(self.calculator.population(row['Value 1'], row['Value 2']), int(row['Result']))
+           self.assertEqual(self.calculator.population1(row['Value 1'], row['Value 2']), int(row['Result']))
            self.assertEqual(self.calculator.result, int(row['Result']))
 
     def test_confidence_interval(self):
@@ -112,7 +112,7 @@ class MyTestCase(unittest.TestCase):
         test_data = CsvReader('6').data
         pprint(test_data)
         for row in test_data:
-           self.assertEqual(self.calculator.variance(row['Value 1'], row['Value 2']), int(row['Result']))
+           self.assertEqual(self.calculator.variance1(row['Value 1'], row['Value 2']), int(row['Result']))
            self.assertEqual(self.calculator.result, int(row['Result']))
 
     def test_results_property(self):
