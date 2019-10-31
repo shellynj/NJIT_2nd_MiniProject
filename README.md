@@ -66,7 +66,7 @@ Each required section can be found by clicking on the Index links below.</br>
 * [Calculator Module](src/Calculator.py)
 * [Calculator Test File Module](src/CalculatorTests.py)
 * [Statistics  Module](src/Statistics.py)
-* [Statistics Test File](src/StatiscticsTests.py)
+* [Statistics Test File](src/StatisticsTests.py)
 * [Reader Module](src/CsvReader.py)
  
 #### Contributions:
