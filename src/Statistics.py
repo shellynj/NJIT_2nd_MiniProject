@@ -1,6 +1,6 @@
-def population_mean(a, b):
-    c= a + b
-    return c
+def population_mean(a, b, c):
+    d= (a + b) / c
+    return d
 
 def median(a, b):
     c= a + b
@@ -64,8 +64,8 @@ class Statistics:
     def __init__(self):
         pass
 
-    def mean(self, a, b):
-        self.result = population_mean(a, b)
+    def mean(self, a, b, c):
+        self.result = population_mean(a, b, c)
         return self.result
 
     def med(self, a, b):

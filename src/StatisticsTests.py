@@ -11,10 +11,10 @@ class MyTestCase(unittest.TestCase):
         self.assertIsInstance(self.calculator, Statistics)
 
     def test_population_mean(self):
-        test_data = CsvReader('/src/test.csv').data
+        test_data = CsvReader('/src/mean.csv').data
         pprint(test_data)
         for row in test_data:
-           self.assertEqual(self.calculator.mean(row['Value 1'], row['Value 2']), int(row['Result']))
+           self.assertEqual(self.calculator.mean(row['Value 1'], row['Value 2']), row['Value 3'], int(row['Result']))
            self.assertEqual(self.calculator.result, int(row['Result']))
 
     def test_median(self):
