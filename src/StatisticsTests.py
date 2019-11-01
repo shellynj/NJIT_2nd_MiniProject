@@ -76,7 +76,7 @@ class MyTestCase(unittest.TestCase):
         test_data = CsvReader('1').data
         pprint(test_data)
         for row in test_data:
-           self.assertEqual(self.calculator.variance(row['Value 1'], row['Value 2']), int(row['Result']))
+           self.assertEqual(self.calculator.variance_p(row['Value 1'], row['Value 2']), int(row['Result']))
            self.assertEqual(self.calculator.result, int(row['Result']))
 
     def test_p_value(self):
@@ -111,7 +111,7 @@ class MyTestCase(unittest.TestCase):
         test_data = CsvReader('6').data
         pprint(test_data)
         for row in test_data:
-           self.assertEqual(self.calculator.variance1(row['Value 1'], row['Value 2']), int(row['Result']))
+           self.assertEqual(self.calculator.variance_1(row['Value 1'], row['Value 2']), int(row['Result']))
            self.assertEqual(self.calculator.result, int(row['Result']))
 
     def test_results_property(self):

@@ -1,17 +1,20 @@
 def population_mean(a, b, c):
+    a = int(a)
+    b = int(b)
+    c = int(c)
     d = (a + b) / c
     return d
 
-def median(a, b, c, d, e, f):
-    med_n = [a, b, c, d, e, f]
+def median(a, b, c, d, e):
+    med_n = [a, b, c, d, e]
     n = len(med_n)
     med_n.sort()
     if n % 2 == 0:
         median1 = med_n[n // 2]
         median2 = med_n[n // 2 - 1]
-        med = (median1 + median2) / 2
+        f = (median1 + median2) / 2
     else:
-        mod = med_n[n // 2]
+        f = med_n[n // 2]
     return f
 
 def mode(a, b):
@@ -76,8 +79,8 @@ class Statistics:
         self.result = population_mean(a, b, c)
         return self.result
 
-    def med(self, a, b, c, d, e, f):
-        self.result = median(a, b, c, d, e, f)
+    def med(self, a, b, c, d, e):
+        self.result = median(a, b, c, d, e)
         return self.result
 
     def mod(self, a, b):
@@ -108,7 +111,7 @@ class Statistics:
         self.result = confidence_interval(a, b)
         return self.result
 
-    def variance(self, a, b):
+    def variance_p(self, a, b):
         self.result = population_variance(a, b)
         return self.result
 
@@ -128,6 +131,6 @@ class Statistics:
         self.result = sample_standard_deviation(a, b)
         return self.result
 
-    def variance1(self, a, b):
+    def variance_1(self, a, b):
         self.result = variance_of_sample_proportion(a, b)
         return self.result
