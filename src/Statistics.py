@@ -2,9 +2,9 @@ def population_mean(a, b, c):
     d= (a + b) / c
     return d
 
-def median(a, b):
-    c= a + b
-    return c
+def median(a, b, c, d, e):
+    f= d= (a + b + c + d + e)
+    return f
 
 def mode(a, b):
     c= a + b
@@ -68,8 +68,8 @@ class Statistics:
         self.result = population_mean(a, b, c)
         return self.result
 
-    def med(self, a, b):
-        self.result = median(a, b)
+    def med(self, a, b, c, d, e, f):
+        self.result = median(a, b, c, d, e, f)
         return self.result
 
     def mod(self, a, b):
