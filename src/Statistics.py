@@ -43,11 +43,7 @@ def mode(a, b, c, d, e, f):
 def population_standard_deviation(a, b):
     a = int(a)
     b = int(b)
-    c = (a**.5) / b
-    if c > 10:
-        c = round(c, 8)
-    else:
-        c = round(c, 9)
+    c = (a ** 2) / b
     return c
 
 def variance_of_population_proportion(a, b):
