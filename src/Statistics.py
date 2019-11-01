@@ -1,9 +1,17 @@
 def population_mean(a, b, c):
-    d= (a + b) / c
+    d = (a + b) / c
     return d
 
-def median(a, b, c, d, e):
-    f= d= (a + b + c + d + e)
+def median(a, b, c, d, e, f):
+    med_n = [a, b, c, d, e, f]
+    n = len(med_n)
+    med_n.sort()
+    if n % 2 == 0:
+        median1 = med_n[n // 2]
+        median2 = med_n[n // 2 - 1]
+        med = (median1 + median2) / 2
+    else:
+        mod = med_n[n // 2]
     return f
 
 def mode(a, b):
