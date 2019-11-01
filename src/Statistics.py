@@ -52,10 +52,14 @@ def variance_of_population_proportion(a, b):
     return c ** 2
 
 def z_score(a, b):
+    a = int(a)
+    b = int(b)
     c= a + b
     return c
 
 def standardized_score(a, b):
+    a = int(a)
+    b = int(b)
     c= a + b
     return c
 
