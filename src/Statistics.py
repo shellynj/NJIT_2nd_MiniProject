@@ -40,9 +40,10 @@ def mode(a, b, c, d, e, f):
         g = "mode is: " + ', '.join(map(str, mode1))
     return g
 
-def population_standard_deviation(a):
+def population_standard_deviation(a, b):
     a = int(a)
-    c = a**.5
+    b = int(b)
+    c = (a**.5) / b
     if c > 10:
         c = round(c, 8)
     else:
@@ -111,8 +112,8 @@ class Statistics:
         self.result = mode(a, b, c, d, e, f)
         return self.result
 
-    def population(self, a):
-        self.result = population_standard_deviation(a)
+    def population(self, a, b):
+        self.result = population_standard_deviation(a, b)
         return self.result
 
     def variance(self, a, b):

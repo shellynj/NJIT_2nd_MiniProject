@@ -34,7 +34,7 @@ class MyTestCase(unittest.TestCase):
         test_data = CsvReader('/src/devi.csv').data
         pprint(test_data)
         for row in test_data:
-            self.assertEqual(self.calculator.population(row['Value 1']), int(row['Result']))
+            self.assertEqual(self.calculator.population(row['Value 1'], row['Value 2']), int(row['Result']))
             self.assertEqual(self.calculator.result, int(row['Result']))
 
     def test_variance_of_population_proportion(self):
