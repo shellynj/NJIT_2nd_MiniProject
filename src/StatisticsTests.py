@@ -38,7 +38,7 @@ class MyTestCase(unittest.TestCase):
             self.assertEqual(self.calculator.result, int(row['Result']))
 
     def test_variance_of_population_proportion(self):
-        test_data = CsvReader('').data
+        test_data = CsvReader('variance.csv').data
         pprint(test_data)
         for row in test_data:
            self.assertEqual(self.calculator.variance(row['Value 1'], row['Value 2']), int(row['Result']))

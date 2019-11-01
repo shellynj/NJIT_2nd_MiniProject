@@ -47,8 +47,10 @@ def population_standard_deviation(a, b):
     return c
 
 def variance_of_population_proportion(a, b):
-    c= a + b
-    return c
+    a = int(a)
+    b = int(b)
+    c = (a ** 2) / b
+    return c ** 2
 
 def z_score(a, b):
     c= a + b
