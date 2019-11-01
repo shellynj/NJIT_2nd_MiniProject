@@ -6,6 +6,11 @@ def population_mean(a, b, c):
     return d
 
 def median(a, b, c, d, e):
+    a = int(a)
+    b = int(b)
+    c = int(c)
+    d = int(d)
+    e = int(e)
     med_n = [a, b, c, d, e]
     n = len(med_n)
     med_n.sort()
@@ -17,9 +22,23 @@ def median(a, b, c, d, e):
         f = med_n[n // 2]
     return f
 
-def mode(a, b):
-    c= a + b
-    return c
+def mode(a, b, c, d, e, f):
+    a = int(a)
+    b = int(b)
+    c = int(c)
+    d = int(d)
+    e = int(e)
+    f = int(f)
+    mod_n = [a, b, c, d, e, f]
+    n = len(mod_n)
+    f = dict(mod_n)
+    mode1 = [k for k, v in g.items() if v == max(list(mod_n.values()))]
+
+    if len(mode1) == n:
+        g = "no mode"
+    else:
+        g = "mode is: " + ', '.join(map(str, mode1))
+    return g
 
 def population_standard_deviation(a, b):
     c= a + b
@@ -83,8 +102,8 @@ class Statistics:
         self.result = median(a, b, c, d, e)
         return self.result
 
-    def mod(self, a, b):
-        self.result = mode(a, b)
+    def mod(self, a, b, c, d, e, f):
+        self.result = mode(a, b, c, d, e, f)
         return self.result
 
     def population(self, a, b):
