@@ -45,7 +45,7 @@ class MyTestCase(unittest.TestCase):
            self.assertEqual(self.calculator.result, int(row['Result']))
 
     def test_z_score(self):
-        test_data = CsvReader('zscore.csv').data
+        test_data = CsvReader('score.csv').data
         pprint(test_data)
         for row in test_data:
            self.assertEqual(self.calculator.score(row['Value 1'], row['Value 2']), int(row['Result']))
