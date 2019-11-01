@@ -14,7 +14,7 @@ class MyTestCase(unittest.TestCase):
         test_data = CsvReader('/src/mean.csv').data
         pprint(test_data)
         for row in test_data:
-           self.assertEqual(self.calculator.mean(row['Value 1'], row['Value 2']), row['Value 3'], int(row['Result']))
+           self.assertEqual(self.calculator.mean(row['Value 1'], row['Value 2'], row['Value 3'], int(row['Result'])))
            self.assertEqual(self.calculator.result, int(row['Result']))
 
     def test_median(self):
@@ -98,7 +98,7 @@ class MyTestCase(unittest.TestCase):
         test_data = CsvReader('4').data
         pprint(test_data)
         for row in test_data:
-           self.assertEqual(self.calculator.smean(row['Value 1'], row['Value 2']), int(row['Result']))
+           self.assertEqual(self.calculator.s_mean(row['Value 1'], row['Value 2']), int(row['Result']))
            self.assertEqual(self.calculator.result, int(row['Result']))
 
     def test_sample_standard_deviation(self):
