@@ -31,7 +31,6 @@ def mode(a, b, c, d, e, f):
     f = int(f)
     mod_n = [a, b, c, d, e, f]
     n = len(mod_n)
-    f = dict(mod_n)
     mode1 = [k for k, v in g.items() if v == max(list(mod_n.values()))]
 
     if len(mode1) == n:
