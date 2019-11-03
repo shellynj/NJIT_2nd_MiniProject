@@ -77,13 +77,13 @@ def correlationCoefficient(a, b, n) :
         squareSum_b = 0
         i = 0
         while i < n:
-            # sum of elements of array X.
+            # sum of elements of array a.
             sum_a = sum_a + a[i]
 
-            # sum of elements of array Y.
+            # sum of elements of array b.
             sum_b = sum_b + b[i]
 
-            # sum of X[i] * Y[i].
+            # sum of a[i] * b[i].
             sum_ab = sum_ab + a[i] * b[i]
 
             # sum of square of array elements.
