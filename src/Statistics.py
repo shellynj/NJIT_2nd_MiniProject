@@ -65,10 +65,6 @@ def standardized_score(a, b):
     c = a + b
     return c
 
-#def correlation_coefficient(a, b):
-#    c= a + b
-#    return c
-
 ##TEMPORARY TESTING with PROVIDED VALUES
 def correlation_coefficient(a, b, n) :
    try:
