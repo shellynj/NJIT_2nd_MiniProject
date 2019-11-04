@@ -48,7 +48,7 @@ class MyTestCase(unittest.TestCase):
         test_data = CsvReader('score.csv').data
         pprint(test_data)
         for row in test_data:
-           self.assertEqual(self.calculator.score(row['Value 1'], row['Value 2']), int(row['Result']))
+           self.assertEqual(self.calculator.score(row['Value 1']), int(row['Result']))
            self.assertEqual(self.calculator.result, int(row['Result']))
 
     def test_standardized_score(self):

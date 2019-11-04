@@ -53,11 +53,10 @@ def variance_of_population_proportion(a, b):
     c = (a ** 2) / b
     return c ** 2
 
-def z_score(a, b):
+def z_score(data, a):
     a = int(a)
-    b = int(b)
-    c= a + b
-    return c
+    b = ((a - population_mean(data)) / population_standard_deviation(data))
+    return b
 
 def standardized_score(a, b):
     a = int(a)
@@ -165,8 +164,8 @@ class Statistics:
         self.result = variance_of_population_proportion(a, b)
         return self.result
 
-    def score(self, a, b):
-        self.result = z_score(a, b)
+    def score(self, a):
+        self.result = z_score(a)
         return self.result
 
     def standardized(self, a, b):
