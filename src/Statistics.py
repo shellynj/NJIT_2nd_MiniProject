@@ -60,7 +60,7 @@ def z_score(a, b):
 def standardized_score(a, b):
     a = int(a)
     b = int(b)
-    c= a + b
+    c = a + b
     return c
 
 #def correlation_coefficient(a, b):
@@ -69,7 +69,7 @@ def standardized_score(a, b):
 
 ##TEMPORARY TESTING with PROVIDED VALUES
 def correlationCoefficient(a, b, n) :
-    try:
+   try:
         sum_a = 0
         sum_b = 0
         sum_ab = 0
@@ -106,16 +106,12 @@ def correlationCoefficient(a, b, n) :
     except ValueError:
         print ("Error: Only Numeric Values are valid!!")
 
-a = [15, 18, 21, 24, 27]
-b = [25, 25, 27, 31, 32]
+##a = [15, 18, 21, 24, 27]
+##b = [25, 25, 27, 31, 32]
 
     # Find the size of array.
-n = len(b)
-print(correlationCoefficient(a, b, n))
-
-
-
-
+##n = len(b)
+##print(correlationCoefficient(a, b, n))
 
 def confidence_interval(a, b):
     c= a + b
