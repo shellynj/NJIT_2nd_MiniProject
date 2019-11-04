@@ -24,7 +24,7 @@ def median(a, b, c, d, e):
         f = med_n[n // 2]
     return f
 
-def mode(a, b, c, d, e, f):
+def mode(a, b, c, d, e, f, g):
     a = int(a)
     b = int(b)
     c = int(c)
@@ -112,31 +112,31 @@ def correlation_coefficient(a, b, n) :
 ##print(correlationCoefficient(a, b, n))
 
 def confidence_interval(a, b):
-    c= a + b
+    c = a + b
     return c
 
 def population_variance(a, b):
-    c= a + b
+    c = a + b
     return c
 
 def p_value(a, b):
-    c= a + b
+    c = a + b
     return c
 
 def proportion(a, b):
-    c= a + b
+    c = a + b
     return c
 
 def sample_mean(a, b):
-    c= a + b
+    c = a + b
     return c
 
 def sample_standard_deviation(a, b):
-    c= a + b
+    c = a + b
     return c
 
 def variance_of_sample_proportion(a, b):
-    c= a + b
+    c = a + b
     return c
 
 class Statistics:
@@ -153,8 +153,8 @@ class Statistics:
         self.result = median(a, b, c, d, e)
         return self.result
 
-    def mod(self, a, b, c, d, e, f):
-        self.result = mode(a, b, c, d, e, f)
+    def mod(self, a, b, c, d, e, f, g):
+        self.result = mode(a, b, c, d, e, f, g)
         return self.result
 
     def population(self, a, b):
@@ -173,8 +173,8 @@ class Statistics:
         self.result = standardized_score(a, b)
         return self.result
 
-    def population1(self, a, b):
-        self.result = correlation_coefficient(a, b)
+    def population1(self, a, b, n):
+        self.result = correlation_coefficient(a, b, n)
         return self.result
 
     def confidence(self, a, b):
