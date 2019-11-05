@@ -13,12 +13,13 @@ from Statistics.proportion import proportion
 from Statistics.sample_mean import sample_mean
 from Statistics.sample_standard_deviation import sample_standard_deviation
 from Statistics.variance_of_sample_proportion import variance_of_sample_proportion
+from Calculator.Calculator import Calculator
 
-class Statistics:
-    result = 0
+class Statistics(Calculator):
+    data = []
 
     def __init__(self):
-        pass
+        super().__init__()
 
     def mean(self, a, b, c):
         self.result = population_mean(a, b, c)
