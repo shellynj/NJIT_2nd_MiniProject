@@ -1,6 +1,6 @@
 import csv
-from pprint import pprint
 from Fileutilities.absolutepath import absolutepath
+from pprint import pprint
 
 def ClassFactory(class_name, dictionary):
     return type(class_name, (object,), dictionary)
@@ -10,7 +10,8 @@ class CsvReader:
 
     def __init__(self, filepath):
         self.data = []
-        with open(filepath) as text_data:
+
+        with open(absolutepath(filepath)) as text_data:
             csv_data = csv.DictReader(text_data, delimiter=',')
             for row in csv_data:
                 self.data.append(row)
