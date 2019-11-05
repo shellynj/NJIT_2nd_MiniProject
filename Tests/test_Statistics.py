@@ -67,7 +67,7 @@ class MyTestCase(unittest.TestCase):
            self.assertEqual(self.statistics.result, result)
 
     def test_correlation_coefficient(self):
-        test_data = CsvReader('').data
+        test_data = CsvReader("Tests/Data/1.csv").data
         pprint(test_data)
         for row in test_data:
            result = int(row['Result'])
@@ -75,7 +75,7 @@ class MyTestCase(unittest.TestCase):
            self.assertEqual(self.statistics.result, result)
 
     def test_confidence_interval(self):
-        test_data = CsvReader('').data
+        test_data = CsvReader("Tests/Data/2.csv").data
         pprint(test_data)
         for row in test_data:
            result = int(row['Result'])
@@ -83,7 +83,7 @@ class MyTestCase(unittest.TestCase):
            self.assertEqual(self.statistics.result, result)
 
     def test_population_variance(self):
-        test_data = CsvReader('1').data
+        test_data = CsvReader("Tests/Data/3.csv").data
         pprint(test_data)
         for row in test_data:
            result = int(row['Result'])
@@ -91,7 +91,7 @@ class MyTestCase(unittest.TestCase):
            self.assertEqual(self.statistics.result, result)
 
     def test_p_value(self):
-        test_data = CsvReader('2').data
+        test_data = CsvReader("Tests/Data/4.csv").data
         pprint(test_data)
         for row in test_data:
            result = int(row['Result'])
@@ -99,7 +99,7 @@ class MyTestCase(unittest.TestCase):
            self.assertEqual(self.statistics.result, result)
 
     def test_proportion(self):
-        test_data = CsvReader('3').data
+        test_data = CsvReader("Tests/Data/5.csv").data
         pprint(test_data)
         for row in test_data:
            result = int(row['Result'])
@@ -107,7 +107,7 @@ class MyTestCase(unittest.TestCase):
            self.assertEqual(self.statistics.result, result)
 
     def test_sample_mean(self):
-        test_data = CsvReader('4').data
+        test_data = CsvReader("Tests/Data/6.csv").data
         pprint(test_data)
         for row in test_data:
            result = int(row['Result'])
@@ -115,7 +115,7 @@ class MyTestCase(unittest.TestCase):
            self.assertEqual(self.statistics.result, result)
 
     def test_sample_standard_deviation(self):
-        test_data = CsvReader('5').data
+        test_data = CsvReader("Tests/Data/7.csv").data
         pprint(test_data)
         for row in test_data:
            result = int(row['Result'])
@@ -123,7 +123,7 @@ class MyTestCase(unittest.TestCase):
            self.assertEqual(self.statistics.result, result)
 
     def test_variance_of_sample_proportion(self):
-        test_data = CsvReader('6').data
+        test_data = CsvReader("Tests/Data/8.csv").data
         pprint(test_data)
         for row in test_data:
            result = int(row['Result'])
