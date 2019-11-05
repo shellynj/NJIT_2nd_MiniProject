@@ -3,6 +3,7 @@ def population_mean(a, b, c):
     b = int(b)
     c = int(c)
     d = (a + b) / c
+    d = round(d, 9)
     return d
 
 def median(a, b, c, d, e):
@@ -18,8 +19,10 @@ def median(a, b, c, d, e):
         median1 = med_n[n // 2]
         median2 = med_n[n // 2 - 1]
         f = (median1 + median2) / 2
+        f = round(f, 9)
     else:
         f = med_n[n // 2]
+        f = round(f, 9)
     return f
 
 def mode(a, b, c, d, e, f, g):
@@ -49,7 +52,8 @@ def variance_of_population_proportion(a, b):
     a = int(a)
     b = int(b)
     c = (a ** 2) / b
-    return c ** 2
+    d = c ** 2
+    return d
 
 def z_score(a, b, c):
     a = int(a)
@@ -151,7 +155,7 @@ class Statistics:
     def __init__(self):
         pass
 
-    def mean(self, a, b, c, data)
+    def mean(self, a, b, c):
         self.result = population_mean(a, b, c)
         return self.result
 
