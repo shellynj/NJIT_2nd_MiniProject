@@ -11,48 +11,48 @@ class MyTestCase(unittest.TestCase):
         self.assertIsInstance(self.calculator, Statistics)
 
     def test_population_mean(self):
-        test_data = CsvReader('/src/mean.csv').data
+        test_data = CsvReader("Tests/Data/mean.csv").data
         pprint(test_data)
         for row in test_data:
            self.assertEqual(self.calculator.mean(row['Value 1'], row['Value 2'], row['Value 3']), int(row['Result']))
            self.assertEqual(self.calculator.result, int(row['Result']))
 
     def test_median(self):
-        test_data = CsvReader('/src/median.csv').data
+        test_data = CsvReader("Tests/Data/median.csv").data
         for row in test_data:
            self.assertEqual(self.calculator.med(row['Value 1'], row['Value 2'], row['Value 3'], row['Value 4'], row['Value 5']), int(row['Result']))
            self.assertEqual(self.calculator.result, int(row['Result']))
 
     def test_mode(self):
-        test_data = CsvReader('/src/mode.csv').data
+        test_data = CsvReader("Tests/Data/mode.csv").data
         pprint(test_data)
         for row in test_data:
            self.assertEqual(self.calculator.mod(row['Value 1'], row['Value 2'], row['Value 3'], row['Value 4'], row['Value 5'], row['Value 6']), int(row['Result']))
            self.assertEqual(self.calculator.result, int(row['Result']))
 
     def test_population_standard_deviation(self):
-        test_data = CsvReader('/src/devi.csv').data
+        test_data = CsvReader("Tests/Data/devi.csv").data
         pprint(test_data)
         for row in test_data:
             self.assertEqual(self.calculator.population(row['Value 1'], row['Value 2']), int(row['Result']))
             self.assertEqual(self.calculator.result, int(row['Result']))
 
     def test_variance_of_population_proportion(self):
-        test_data = CsvReader('variance.csv').data
+        test_data = CsvReader("Tests/Data/variance.csv").data
         pprint(test_data)
         for row in test_data:
            self.assertEqual(self.calculator.variance(row['Value 1'], row['Value 2']), int(row['Result']))
            self.assertEqual(self.calculator.result, int(row['Result']))
 
     def test_z_score(self):
-        test_data = CsvReader('score.csv').data
+        test_data = CsvReader("Tests/Data/score.csv").data
         pprint(test_data)
         for row in test_data:
            self.assertEqual(self.calculator.score(row['Value 1'], row['Value 2'], row['Value 3']), int(row['Result']))
            self.assertEqual(self.calculator.result, int(row['Result']))
 
     def test_standardized_score(self):
-        test_data = CsvReader('score_1.csv').data
+        test_data = CsvReader("Tests/Data/score_1.csv").data
         pprint(test_data)
         for row in test_data:
            self.assertEqual(self.calculator.standardized(row['Value 1'], row['Value 2'], row['Value 3']), int(row['Result']))
