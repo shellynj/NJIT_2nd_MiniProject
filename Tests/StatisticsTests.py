@@ -1,6 +1,6 @@
 import unittest
-from Statistics import Statistics
-from CsvReader import CsvReader
+from Statistics.Statistics import Statistics
+from CsvReader.CsvReader import CsvReader
 from pprint import pprint
 
 class MyTestCase(unittest.TestCase):
