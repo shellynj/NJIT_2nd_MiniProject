@@ -19,6 +19,7 @@ class MyTestCase(unittest.TestCase):
 
     def test_median(self):
         test_data = CsvReader("Tests/Data/median.csv").data
+        pprint(test_data)
         for row in test_data:
            self.assertEqual(self.calculator.med(row['Value 1'], row['Value 2'], row['Value 3'], row['Value 4'], row['Value 5']), int(row['Result']))
            self.assertEqual(self.calculator.result, int(row['Result']))
