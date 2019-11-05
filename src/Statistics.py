@@ -1,5 +1,3 @@
-import math
-
 def population_mean(a, b, c):
     a = int(a)
     b = int(b)
