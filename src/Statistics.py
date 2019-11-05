@@ -57,17 +57,21 @@ def z_score(a, b, c):
     a = int(a)
     b = int(b)
     c = int(c)
-    ## a is score
+    ## a is value
     ## b is mean
     ## c is standard deviation
     d = ((a - b)/ c)
     return d
 
-def standardized_score(a, b):
+def standardized_score(a, b, c):
     a = int(a)
     b = int(b)
-    c = a + b
-    return c
+    c = int(c)
+    ## a is value
+    ## b is mean
+    ## c is standard deviation
+    d = ((a - b)/ c)
+    return d
 
 ##TEMPORARY TESTING with PROVIDED VALUES
 def correlation_coefficient(a, b, n) :
@@ -173,8 +177,8 @@ class Statistics:
         self.result = z_score(a, b, c)
         return self.result
 
-    def standardized(self, a, b):
-        self.result = standardized_score(a, b)
+    def standardized(self, a, b, c):
+        self.result = standardized_score(a, b, c)
         return self.result
 
     def population1(self, a, b, n):

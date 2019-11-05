@@ -55,7 +55,7 @@ class MyTestCase(unittest.TestCase):
         test_data = CsvReader('score_1.csv').data
         pprint(test_data)
         for row in test_data:
-           self.assertEqual(self.calculator.standardized(row['Value 1'], row['Value 2']), int(row['Result']))
+           self.assertEqual(self.calculator.standardized(row['Value 1'], row['Value 2'], row['Value 3']), int(row['Result']))
            self.assertEqual(self.calculator.result, int(row['Result']))
 
     def test_correlation_coefficient(self):
