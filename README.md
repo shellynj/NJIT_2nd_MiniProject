@@ -63,23 +63,25 @@ Each required section can be found by clicking on the Index links below.</br>
 
 #### Index:
 * [2nd Mini Project Defenitions](https://github.com/mykolatyniv/NJIT-1st-MiniProject/blob/master/calculator.md)
-* [Calculator Module](src/Calculator.py)
-* [Calculator Test File Module](src/CalculatorTests.py)
-* [Statistics  Module](src/Statistics.py)
-* [Statistics Test File](src/StatisticsTests.py)
-* [Reader Module](src/CsvReader.py)
+* [Calculator Module](Calculator/Calculator.py)
+* [Calculator Test File Module](Tests/CalculatorTests.py)
+* [Statistics  Module](Statistics/Statistics.py)
+* [Statistics Test File](Tests/StatisticsTests.py)
+* [Reader Module](CsvReader/CsvReader.py)
+* [Travis Link](https://travis-ci.org/mykolatyniv/NJIT_2nd_MiniProject)
  
 #### Contributions:
 - **Readme File - Mykola Lupak**
 - **Sources - Mykola Lupak & Michelle Boykins**
 - **Travis - Mykola Lupak**
 - **2nd mini project definitions - Mykola Lupak & Michelle Boykins**
-- **src folder files - Mykola Lupak & Michelle Boykins**
+- **folders files - Mykola Lupak & Michelle Boykins**
  
 #### Change Log:
 |  Date  | Details  |  
 |---|---|
- 10/28/2019  | Mykola Lupak updated Readme file | 
+|  11/04/2019  | Mykola Lupak reorganized per professor last video format | 
+|  10/28/2019  | Mykola Lupak updated Readme file | 
 |  10/30/2019  | Mykola Lupak Created Statistics and Statistics Test file |  
 |  10/30/2019  | Mykola Lupak Created Travis file and signup on travis site |  
 |  10/28/2019  | Mykola Lupak uploaded new files |  
