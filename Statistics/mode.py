@@ -1,4 +1,4 @@
-def mode(a, b, c, d, e, f, g):
+def mode(a, b, c, d, e, f):
     a = int(a)
     b = int(b)
     c = int(c)
