@@ -49,8 +49,8 @@ class Statistics(Calculator):
         self.result = standardized_score(a, b, c)
         return self.result
 
-    def population1(self, a, b, n):
-        self.result = correlation_coefficient(a, b, n)
+    def population1(self, a, b):
+        self.result = correlation_coefficient(a, b)
         return self.result
 
     def confidence(self, a, b):
