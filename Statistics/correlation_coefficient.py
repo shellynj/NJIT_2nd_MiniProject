@@ -1,4 +1,4 @@
-def confidence_interval(a, b):
+def correlation_coefficient(a, b):
     c = a + b
     return c
 
