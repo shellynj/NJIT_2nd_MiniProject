@@ -64,9 +64,9 @@ Each required section can be found by clicking on the Index links below.</br>
 #### Index:
 * [2nd Mini Project Defenitions](https://github.com/mykolatyniv/NJIT-1st-MiniProject/blob/master/calculator.md)
 * [Calculator Module](Calculator/Calculator.py)
-* [Calculator Test File Module](Tests/CalculatorTests.py)
+* [Calculator Test File Module](Tests/test_Calculator.py)
 * [Statistics  Module](Statistics/Statistics.py)
-* [Statistics Test File](Tests/StatisticsTests.py)
+* [Statistics Test File](Tests/test_Statistics.py)
 * [Reader Module](CsvReader/CsvReader.py)
 * [Travis Link](https://travis-ci.org/mykolatyniv/NJIT_2nd_MiniProject)
  
