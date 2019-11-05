@@ -5,14 +5,9 @@ def median(a, b, c, d, e):
     d = int(d)
     e = int(e)
     med_n = [a, b, c, d, e]
-    n = len(med_n)
     med_n.sort()
-    if n % 2 == 0:
-        median1 = med_n[n // 2]
-        median2 = med_n[n // 2 - 1]
-        f = (median1 + median2) / 2
-        f = round(f, 9)
-    else:
-        f = med_n[n // 2]
-        f = round(f, 9)
+    med_s = len(med_n) // 2
+    g = med_n(med_s)
+    h = med_n(-med_s -1)
+    f = (g + h) / 2
     return f
