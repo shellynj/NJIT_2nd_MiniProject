@@ -24,8 +24,8 @@ class Statistics:
         self.result = population_mean(a, b, c)
         return self.result
 
-    def med(self, a, b, c, d, e):
-        self.result = median(a, b, c, d, e)
+    def med(self, a, b, c, d, e, f):
+        self.result = median(a, b, c, d, e, f)
         return self.result
 
     def mod(self, a, b, c, d, e, f):
