@@ -54,7 +54,7 @@ class MyTestCase(unittest.TestCase):
         test_data = CsvReader("Tests/Data/score.csv").data
         pprint(test_data)
         for row in test_data:
-           result = int(row['Result'])
+           result = float(row['Result'])
            self.assertEqual(self.statistics.score(row['Value 1'], row['Value 2'], row['Value 3']), result)
            self.assertEqual(self.statistics.result, result)
 
@@ -62,7 +62,7 @@ class MyTestCase(unittest.TestCase):
         test_data = CsvReader("Tests/Data/score_1.csv").data
         pprint(test_data)
         for row in test_data:
-           result = int(row['Result'])
+           result = float(row['Result'])
            self.assertEqual(self.statistics.standardized(row['Value 1'], row['Value 2'], row['Value 3']), result)
            self.assertEqual(self.statistics.result, result)
 
