@@ -22,7 +22,7 @@ class MyTestCase(unittest.TestCase):
         test_data = CsvReader("Tests/Data/median.csv").data
         pprint(test_data)
         for row in test_data:
-           result = int(row['Result'])
+           result = float(row['Result'])
            self.assertEqual(self.statistics.med(row['Value 1'], row['Value 2'], row['Value 3'], row['Value 4'], row['Value 5']), result)
            self.assertEqual(self.statistics.result, result)
 
@@ -30,7 +30,7 @@ class MyTestCase(unittest.TestCase):
         test_data = CsvReader("Tests/Data/mode.csv").data
         pprint(test_data)
         for row in test_data:
-           result = int(row['Result'])
+           result = float(row['Result'])
            self.assertEqual(self.statistics.mod(row['Value 1'], row['Value 2'], row['Value 3'], row['Value 4'], row['Value 5'], row['Value 6']), result)
            self.assertEqual(self.statistics.result, result)
 
