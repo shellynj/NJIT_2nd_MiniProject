@@ -26,12 +26,20 @@ class MyTestCase(unittest.TestCase):
            self.assertEqual(self.statistics.med(row['Value 1'], row['Value 2'], row['Value 3'], row['Value 4'], row['Value 5'], row['Value 6']), result)
            self.assertEqual(self.statistics.result, result)
 
-    def test_mode(self):
-        test_data = CsvReader("Tests/Data/mode.csv").data
+    ##def test_mode(self):
+      ##  test_data = CsvReader("Tests/Data/mode.csv").data
+        ##pprint(test_data)
+        ##for row in test_data:
+          ## result = float(row['Result'])
+           ##self.assertEqual(self.statistics.mod(row['Value 1'], row['Value 2'], row['Value 3'], row['Value 4'], row['Value 5'], row['Value 6']), result)
+           ##self.assertEqual(self.statistics.result, result)
+
+    def test_correlation_coefficient(self):
+        test_data = CsvReader("Tests/Data/mode1.csv").data
         pprint(test_data)
         for row in test_data:
-           result = float(row['Result'])
-           self.assertEqual(self.statistics.mod(row['Value 1'], row['Value 2'], row['Value 3'], row['Value 4'], row['Value 5'], row['Value 6']), result)
+           result = int(row['Result'])
+           self.assertEqual(self.statistics.mod(row['Value 1'], row['Value 2']), result)
            self.assertEqual(self.statistics.result, result)
 
     def test_population_standard_deviation(self):
