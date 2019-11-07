@@ -80,3 +80,4 @@ class Statistics(Calculator):
     def variance_1(self, a, b):
         self.result = variance_of_sample_proportion(a, b)
         return self.result
+    
