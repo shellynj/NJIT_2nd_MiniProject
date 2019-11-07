@@ -1,6 +1,5 @@
-def mode(a, b, c):
+def mode(a, b):
     a = int(a)
     b = int(b)
-    c = int(c)
-    d= ([a, b, c])
-    return d
+    c = a + b
+    return c
