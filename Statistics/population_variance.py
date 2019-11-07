@@ -1,4 +1,4 @@
-def population_n(a, b):
+def population_variance(a, b):
     a = int(a)
     b = int(b)
     c = a + b

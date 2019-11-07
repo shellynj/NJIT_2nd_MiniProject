@@ -1,4 +1,4 @@
-def score_n(a, b, c):
+def score(a, b, c):
     a = int(a)
     b = int(b)
     c = int(c)
