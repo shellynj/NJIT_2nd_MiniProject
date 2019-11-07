@@ -1,3 +1,4 @@
+from Calculator.Calculator import Calculator
 from Statistics.Population_mean import population_mean
 from Statistics.Median import median
 from Statistics.Mode import mode
@@ -14,11 +15,11 @@ from Statistics.Sample_mean import sample_mean
 from Statistics.Sample_standard_deviation import sample_standard_deviation
 from Statistics.Variance_of_sample_proportion import variance_of_sample_proportion
 
-class Statistics:
-    result = 0
+class Statistics(Calculator):
+    data = []
 
     def __init__(self):
-        pass
+        super().__init__()
 
     def mean(self, a, b, c):
         self.result = population_mean(a, b, c)
