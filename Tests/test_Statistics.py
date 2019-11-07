@@ -1,4 +1,5 @@
 import unittest
+
 from Statistics.Statistics import Statistics
 from CsvReader.CsvReader import CsvReader
 from pprint import pprint
@@ -7,7 +8,7 @@ class MyTestCase(unittest.TestCase):
     def setUp(self) -> None:
         self.statistics = Statistics()
 
-    def test_instantiate_statistics(self):
+    def test_instantiate_calculator(self):
         self.assertIsInstance(self.statistics, Statistics)
 
     def test_population_mean(self):
@@ -137,9 +138,6 @@ class MyTestCase(unittest.TestCase):
            result = int(row['Result'])
            self.assertEqual(self.statistics.variance_1(row['Value 1'], row['Value 2']), result)
            self.assertEqual(self.statistics.result, result)
-
-    def test_results_property_n(self):
-            self.assertEqual(self.statistics.result, 0)
 
     if __name__ == '__main__':
         unittest.main()
