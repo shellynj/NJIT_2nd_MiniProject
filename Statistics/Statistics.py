@@ -73,9 +73,19 @@ class Statistics(Calculator):
         self.result = sample_mean(a, b)
         return self.result
 
-    def sample(self, a, b):
-        self.result = sample_standard_deviation(a, b)
-        return self.result
+    # original Mykola
+    #def sample(self, a, b):
+     #   self.result = sample_standard_deviation(a, b)
+      #  return self.result
+
+        # original Michelle
+  #  def stan_dev(self, a, b, c, d, e, f, g, h, j, k):
+  #      self.result = standard_deviation(a, b, c, d, e, f, g, h, j, k)
+  #      return self.result
+
+     def stan_dev(self, a, b, c, d, e, f, g, h, j, k):
+         self.result = sample_standard_deviation(a, b, c, d, e, f, g, h, j, k)
+         return self.result
 
     def variance_1(self, a, b):
         self.result = variance_of_sample_proportion(a, b)
