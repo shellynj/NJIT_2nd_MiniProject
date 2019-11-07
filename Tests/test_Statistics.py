@@ -8,7 +8,7 @@ class MyTestCase2(unittest.TestCase):
     def setUp(self) -> None:
         self.statistics = Statistics()
 
-    def test_instantiate_calculator(self):
+    def test_instantiate_statistics(self):
         self.assertIsInstance(self.statistics, Statistics)
 
     def test_population_mean(self):
