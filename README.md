@@ -55,7 +55,7 @@ For this program you need to work in a team of 2-3 to create a statistical calcu
 - [x] You need a module for reading CSV files
 - [x] You need a module for statistics
 - [x] You need a module for calculator
-- [ ] You need to throw exceptions when there is a problem such as file not found.
+- [x] You need to throw exceptions when there is a problem such as file not found.
 - [x] You must have tests for you calculator, statistics, and CSV file reading modules.   
 
 Each required section can be found by clicking on the Index links below.</br> 
@@ -66,7 +66,7 @@ Each required section can be found by clicking on the Index links below.</br>
 * [Calculator Module](Calculator/Calculator.py)
 * [Calculator Test File Module](Tests/test_Calculator.py)
 * [Statistics  Module](Statistics/Statistics.py)
-* [Statistics Test File](Tests/test_Statistics.py)
+* [Statistics Test File](Tests/test_statistics.py)
 * [Reader Module](CsvReader/CsvReader.py)
 * [Travis Link](https://travis-ci.org/mykolatyniv/NJIT_2nd_MiniProject)
  
@@ -80,6 +80,7 @@ Each required section can be found by clicking on the Index links below.</br>
 #### Change Log:
 |  Date  | Details  |  
 |---|---|
+|  11/06/2019  | Mykola Lupak fixed travis file|
 |  11/05/2019  | Michelle Boykins created pop_mean.csv file|
 |  11/04/2019  | Mykola Lupak updated Readme file | 
 |  11/04/2019  | Mykola Lupak reorganized per professor last video format | 

@@ -1,11 +1,11 @@
 from Calculator.Calculator import Calculator
-from Statistics.Population_mean import population_mean
+from Statistics.Mean import mean
 from Statistics.Median import median
 from Statistics.Mode import mode
 from Statistics.Population_standard_deviation import population_standard_deviation
 from Statistics.Variance_of_population_proportion import variance_of_population_proportion
 from Statistics.Z_score import z_score
-from Statistics.Standardized_score import standardized_score
+from Statistics.Standardized_score import score
 from Statistics.Correlation_coefficient import correlation_coefficient
 from Statistics.Confidence_interval import confidence_interval
 from Statistics.Population_variance import population_variance
@@ -16,21 +16,21 @@ from Statistics.Sample_standard_deviation import sample_standard_deviation
 from Statistics.Variance_of_sample_proportion import variance_of_sample_proportion
 
 class Statistics(Calculator):
-    data = []
+    result = 0
 
     def __init__(self):
         super().__init__()
 
     def mean(self, a, b, c):
-        self.result = population_mean(a, b, c)
+        self.result = mean(a, b, c)
         return self.result
 
-    def med(self, a, b, c, d, e):
-        self.result = median(a, b, c, d, e)
+    def med(self, a, b, c, d, e, f):
+        self.result = median(a, b, c, d, e, f)
         return self.result
 
-    def mod(self, a, b, c, d, e, f):
-        self.result = mode(a, b, c, d, e, f)
+    def mod(self, a, b):
+        self.result = mode(a, b)
         return self.result
 
     def population(self, a, b):
@@ -46,7 +46,7 @@ class Statistics(Calculator):
         return self.result
 
     def standardized(self, a, b, c):
-        self.result = standardized_score(a, b, c)
+        self.result = score(a, b, c)
         return self.result
 
     def population1(self, a, b):
