@@ -1,9 +1,10 @@
 import unittest
+
 from Statistics.Statistics import Statistics
 from CsvReader.CsvReader import CsvReader
 from pprint import pprint
 
-class MyTestCase(unittest.TestCase):
+class MyTestCase2(unittest.TestCase):
     def setUp(self) -> None:
         self.statistics = Statistics()
 
