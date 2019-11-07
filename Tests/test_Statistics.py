@@ -1,5 +1,5 @@
 import unittest
-from Statistics.statistics_n import Statistics
+from Statistics.Statistics import Statistics
 from CsvReader.CsvReader import CsvReader
 from pprint import pprint
 
