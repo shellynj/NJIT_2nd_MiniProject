@@ -19,7 +19,7 @@ class Statistics(Calculator):
     data = []
 
     def __init__(self):
-        pass
+        super().__init__()
 
     def mean(self, a, b, c):
         self.result = mean(a, b, c)
