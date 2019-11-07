@@ -139,5 +139,5 @@ class MyTestCase2(unittest.TestCase):
            self.assertEqual(self.statistics.variance_1(row['Value 1'], row['Value 2']), result)
            self.assertEqual(self.statistics.result, result)
 
-    if __name__ == '__main__':
+if __name__ == '__main__':
         unittest.main()
