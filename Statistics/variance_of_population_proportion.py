@@ -1,4 +1,4 @@
-def variance_of_population_proportion(a, b):
+def n_proportion(a, b):
     a = int(a)
     b = int(b)
     c = (a ** 2) / b

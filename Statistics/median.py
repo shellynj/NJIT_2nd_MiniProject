@@ -1,4 +1,4 @@
-def median(a, b, c, d, e, f):
+def median_i(a, b, c, d, e, f):
     a = int(a)
     b = int(b)
     c = int(c)

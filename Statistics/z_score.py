@@ -1,4 +1,4 @@
-def z_score(a, b, c):
+def z_score_n(a, b, c):
     a = int(a)
     b = int(b)
     c = int(c)

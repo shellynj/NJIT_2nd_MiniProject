@@ -1,4 +1,4 @@
-def mode(a, b):
+def mode_i(a, b):
     a = int(a)
     b = int(b)
     c = a + b

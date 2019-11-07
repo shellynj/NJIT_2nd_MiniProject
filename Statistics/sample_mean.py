@@ -1,4 +1,4 @@
-def sample_mean(a, b):
+def sample_mean_n(a, b):
     a = int(a)
     b = int(b)
     c = a + b

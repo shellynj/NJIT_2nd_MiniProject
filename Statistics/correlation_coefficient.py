@@ -1,4 +1,4 @@
-def correlation_coefficient(a, b):
+def correlation(a, b):
     a = int(a)
     b = int(b)
     c = a + b
