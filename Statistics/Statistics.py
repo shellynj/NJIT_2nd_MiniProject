@@ -29,8 +29,8 @@ class Statistics(Calculator):
         self.result = median(a, b, c, d, e, f)
         return self.result
 
-    def mod(self, a, b):
-        self.result = mode(a, b)
+    def mod(self, a, b, c):
+        self.result = mode(a, b, c)
         return self.result
 
     def population(self, a, b):
