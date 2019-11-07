@@ -1,10 +1,9 @@
 import unittest
-
 from Statistics.Statistics import Statistics
 from CsvReader.CsvReader import CsvReader
 from pprint import pprint
 
-class MyTestCase2(unittest.TestCase):
+class MyTestCase(unittest.TestCase):
     def setUp(self) -> None:
         self.statistics = Statistics()
 
@@ -138,6 +137,9 @@ class MyTestCase2(unittest.TestCase):
            result = int(row['Result'])
            self.assertEqual(self.statistics.variance_1(row['Value 1'], row['Value 2']), result)
            self.assertEqual(self.statistics.result, result)
+
+    def test_results_property(self):
+        self.assertEqual(self.statistics.result, 0)
 
 if __name__ == '__main__':
         unittest.main()
