@@ -1,4 +1,3 @@
-from Calculator.Calculator import Calculator
 from Statistics.Mean import mean
 from Statistics.Median import median
 from Statistics.Mode import mode
@@ -15,8 +14,8 @@ from Statistics.Sample_mean import sample_mean
 from Statistics.Sample_standard_deviation import sample_standard_deviation
 from Statistics.Variance_of_sample_proportion import variance_of_sample_proportion
 
-class Statistics(Calculator):
-    data = []
+class Statistics:
+    result = 0
 
     def __init__(self):
         super().__init__()
