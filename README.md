@@ -80,6 +80,7 @@ Each required section can be found by clicking on the Index links below.</br>
 #### Change Log:
 |  Date  | Details  |  
 |---|---|
+|  11/06/2019  | Mykola Lupak fixed travis file|
 |  11/05/2019  | Michelle Boykins created pop_mean.csv file|
 |  11/04/2019  | Mykola Lupak updated Readme file | 
 |  11/04/2019  | Mykola Lupak reorganized per professor last video format | 
