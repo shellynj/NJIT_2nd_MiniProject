@@ -1,14 +1,14 @@
 import unittest
-from Statistics.Statistics import Statistics
+from Statistics.statistics_n import statistics_n
 from CsvReader.CsvReader import CsvReader
 from pprint import pprint
 
 class MyTestCase(unittest.TestCase):
     def setUp(self) -> None:
-        self.statistics = Statistics()
+        self.statistics = statistics_n()
 
     def test_instantiate_calculator(self):
-        self.assertIsInstance(self.statistics, Statistics)
+        self.assertIsInstance(self.statistics, statistics_n)
 
     def test_population_mean(self):
         test_data = CsvReader("Tests/Data/mean.csv").data
