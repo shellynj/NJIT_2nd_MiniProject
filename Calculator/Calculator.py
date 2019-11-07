@@ -34,3 +34,4 @@ class Calculator:
     def square_rooting(self, a):
         self.result = square_root(a)
         return self.result
+
