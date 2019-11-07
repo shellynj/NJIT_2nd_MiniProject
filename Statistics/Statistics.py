@@ -1,5 +1,5 @@
 from Calculator.Calculator import Calculator
-from Statistics.Population_mean import population_mean
+from Statistics.Mean import population_mean
 from Statistics.Median import median
 from Statistics.Mode import mode
 from Statistics.Population_standard_deviation import population_standard_deviation
