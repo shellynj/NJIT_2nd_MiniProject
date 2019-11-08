@@ -74,8 +74,8 @@ class Statistics(Calculator):
         self.result = sample_mean(a, b)
         return self.result
 
-    def stan_dev(self, a, b, c, d, e, f, g, h, j):
-         self.result = sample_standard_deviation(a, b, c, d, e, f, g, h, j)
+    def stan_dev(self, a, b, c, d, e, f, g, h, j, k):
+         self.result = sample_standard_deviation(a, b, c, d, e, f, g, h, j, k)
          return self.result
 
     def variance_1(self, a, b):
