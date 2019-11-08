@@ -1,19 +1,19 @@
 from Calculator.Calculator import Calculator
 from Statistics.Mean import mean
-from Statistics.Median import median
-from Statistics.Mode import mode
-from Statistics.Population_standard_deviation import population_standard_deviation
-from Statistics.Variance_of_population_proportion import variance_of_population_proportion
-from Statistics.Z_score import z_score
-from Statistics.Standardized_score import score
-from Statistics.Correlation_coefficient import correlation_coefficient
-from Statistics.Confidence_interval import confidence_interval
-from Statistics.Population_variance import population_variance
-from Statistics.P_value import p_value
-from Statistics.Proportion import proportion
-from Statistics.Sample_mean import sample_mean
+from Statistics.median import median
+from Statistics.mode import mode
+from Statistics.population_standard_deviation import population_standard_deviation
+from Statistics.variance_of_population_proportion import variance_of_population_proportion
+from Statistics.z_score import z_score
+from Statistics.standardized_score import score
+from Statistics.correlation_coefficient import correlation_coefficient
+from Statistics.confidence_interval import confidence_interval
+from Statistics.population_variance import population_variance
+from Statistics.p_value import p_value
+from Statistics.proportion import proportion
+from Statistics.sample_mean import sample_mean
 from Statistics.sample_standard_deviation import sample_standard_deviation
-from Statistics.Variance_of_sample_proportion import variance_of_sample_proportion
+from Statistics.variance_of_sample_proportion import variance_of_sample_proportion
 
 
 class Statistics(Calculator):
