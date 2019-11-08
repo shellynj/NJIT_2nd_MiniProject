@@ -69,11 +69,13 @@ class MyTestCase(unittest.TestCase):
            self.assertEqual(self.statistics.result, result)
 
     def test_correlation_coefficient(self):
-        test_data = CsvReader("Tests/Data/1.csv").data
+        test_data = CsvReader("Tests/Data/corr_coef.csv").data
         pprint(test_data)
         for row in test_data:
-           result = int(row['Result'])
-           self.assertEqual(self.statistics.population1(row['Value 1'], row['Value 2']), result)
+           result = float(row['Result'])
+           self.assertEqual(self.statistics.corr_coef(row['Value 1'], row['Value 2'], row['Value 3'], row['Value 4'],
+                                                 row['Value 5'], row['Value 6'], row['Value 7'], row['Value 8'],
+                                                 row['Value 9'], row['Value 10']), float(row['Result']))
            self.assertEqual(self.statistics.result, result)
 
     def test_confidence_interval(self):
@@ -118,7 +120,6 @@ class MyTestCase(unittest.TestCase):
            self.assertEqual(self.statistics.samp_mean(row['Value 1'], row['Value 2'], row['Value 3']), result)
            self.assertEqual(self.statistics.result, result)
 
-#   Michelle
     def test_sample_standard_deviation(self):
         test_data = CsvReader("Tests/Data/samp_stan_dev.csv").data
         pprint(test_data)

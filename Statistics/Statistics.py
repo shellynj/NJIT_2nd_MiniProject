@@ -49,8 +49,8 @@ class Statistics(Calculator):
         self.result = score(a, b, c)
         return self.result
 
-    def population1(self, a, b):
-        self.result = correlation_coefficient(a, b)
+    def corr_coef(self, a, b, c, d, e, f, g, h, j, k):
+        self.result = correlation_coefficient(a, b, c, d, e, f, g, h, j, k)
         return self.result
 
     def confidence(self, a, b):
@@ -81,3 +81,5 @@ class Statistics(Calculator):
     def variance_1(self, a, b):
         self.result = variance_of_sample_proportion(a, b)
         return self.result
+
+
