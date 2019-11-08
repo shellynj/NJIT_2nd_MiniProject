@@ -66,7 +66,7 @@ Each required section can be found by clicking on the Index links below.</br>
 * [Calculator Module](Calculator/Calculator.py)
 * [Calculator Test File Module](Tests/test_Calculator.py)
 * [Statistics  Module](Statistics/Statistics.py)
-* [Statistics Test File](Tests/test_statistics.py)
+* [Statistics Test File](Tests/test_Statistics.py)
 * [Reader Module](CsvReader/CsvReader.py)
 * [Travis Link](https://travis-ci.org/mykolatyniv/NJIT_2nd_MiniProject)
  
