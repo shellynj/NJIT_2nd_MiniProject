@@ -118,7 +118,7 @@ class MyTestCase(unittest.TestCase):
 
 #   Michelle
     def test_sample_standard_deviation(self):
-        test_data = CsvReader('/src/samp_stan_dev.csv').data
+        test_data = CsvReader("Tests/Data/samp_stan_dev.csv").data
         pprint(test_data)
         for row in test_data:
            self.assertEqual(self.statistics.stan_dev(row['Value 1'], row['Value 2'], row['Value 3'], row['Value 4'],
