@@ -15,6 +15,7 @@ from Statistics.Sample_mean import sample_mean
 from Statistics.sample_standard_deviation import sample_standard_deviation
 from Statistics.Variance_of_sample_proportion import variance_of_sample_proportion
 
+
 class Statistics(Calculator):
     result = 0
 
