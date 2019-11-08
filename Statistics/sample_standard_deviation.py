@@ -8,5 +8,5 @@ def sample_standard_deviation(a, b, c, d, e, f, g, h, j):
     g = int(g)
     h = int(h)
     j = int(j)
-    return k
+    return
 
