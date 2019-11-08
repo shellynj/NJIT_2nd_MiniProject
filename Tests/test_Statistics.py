@@ -105,11 +105,11 @@ class MyTestCase(unittest.TestCase):
            self.assertEqual(self.statistics.result, result)
 
     def test_proportion(self):
-        test_data = CsvReader("Tests/Data/5.csv").data
+        test_data = CsvReader("Tests/Data/propor.csv").data
         pprint(test_data)
         for row in test_data:
            result = int(row['Result'])
-           self.assertEqual(self.statistics.prop(row['Value 1'], row['Value 2']), result)
+           self.assertEqual(self.statistics.propor(row['Value 1'], row['Value 2'], row['Value 3']), result)
            self.assertEqual(self.statistics.result, result)
 
     def test_sample_mean(self):
