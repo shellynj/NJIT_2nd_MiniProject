@@ -23,8 +23,8 @@ def sample_standard_deviation(a, b, c, d, e, f, g, h, j, k):
         sample_variance = x_minus_mean_squared / len(sample)
         stan_dev = round(sample_variance ** 0.5,12)
 
-         # Sample Standard Deviation
-         return stan_dev
+        # Sample Standard Deviation
+        return stan_dev
 
     except ZeroDivisionError:
         print("Error: Dividing by Zero is not valid!!")
