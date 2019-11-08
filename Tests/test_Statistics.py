@@ -135,12 +135,15 @@ class MyTestCase(unittest.TestCase):
 
 
     def test_variance_of_sample_proportion(self):
-        test_data = CsvReader("Tests/Data/8.csv").data
+        test_data = CsvReader("Tests/Data/var_samp_propor.csv").data
         pprint(test_data)
         for row in test_data:
-           result = int(row['Result'])
-           self.assertEqual(self.statistics.variance_1(row['Value 1'], row['Value 2']), result)
+           result = float(row['Result'])
+           self.assertEqual(self.statistics.var_samp_propor(row['Value 1'], row['Value 2'], row['Value 3'], row['Value 4'],
+                                                 row['Value 5'], row['Value 6'], row['Value 7'], row['Value 8'],
+                                                 row['Value 9'], row['Value 10']), float(row['Result']))
            self.assertEqual(self.statistics.result, result)
+
 
     def test_results_property(self):
         self.assertEqual(self.statistics.result, 0)

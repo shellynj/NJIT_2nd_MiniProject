@@ -78,8 +78,8 @@ class Statistics(Calculator):
          self.result = sample_standard_deviation(a, b, c, d, e, f, g, h, j, k)
          return self.result
 
-    def variance_1(self, a, b):
-        self.result = variance_of_sample_proportion(a, b)
+    def var_samp_propor(self, a, b, c, d, e, f, g, h, j, k):
+        self.result = variance_of_sample_proportion(a, b, c, d, e, f, g, h, j, k)
         return self.result
 
 
