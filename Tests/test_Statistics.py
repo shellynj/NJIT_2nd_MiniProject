@@ -136,8 +136,5 @@ class MyTestCase(unittest.TestCase):
            self.assertEqual(self.statistics.variance_1(row['Value 1'], row['Value 2']), result)
            self.assertEqual(self.statistics.result, result)
 
-    def test_results_property(self):
-        self.assertEqual(self.statistics.result, 0)
-
-if __name__ == '__main__':
+    if __name__ == '__main__':
         unittest.main()
