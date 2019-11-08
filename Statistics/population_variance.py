@@ -1,10 +1,3 @@
-#def population_variance(a, b):
-#    a = int(a)
-#    b = int(b)
-#    c = a + b
-#    return c
-
-
 #Single-Sample Confidence Interval Using the Z Statistic
 
 def population_variance(a,b,c,d,e,f,g,h,j,k):

@@ -85,11 +85,13 @@ class MyTestCase(unittest.TestCase):
            self.assertEqual(self.statistics.result, result)
 
     def test_population_variance(self):
-        test_data = CsvReader("Tests/Data/3.csv").data
+        test_data = CsvReader("Tests/Data/pop_var.csv").data
         pprint(test_data)
         for row in test_data:
-           result = int(row['Result'])
-           self.assertEqual(self.statistics.variance_p(row['Value 1'], row['Value 2']), result)
+           result = float(row['Result'])
+           self.assertEqual(self.statistics.pop_var(row['Value 1'], row['Value 2'], row['Value 3'], row['Value 4'],
+                                                 row['Value 5'], row['Value 6'], row['Value 7'], row['Value 8'],
+                                                 row['Value 9'], row['Value 10']), float(row['Result']))
            self.assertEqual(self.statistics.result, result)
 
     def test_p_value(self):

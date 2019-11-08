@@ -57,8 +57,8 @@ class Statistics(Calculator):
         self.result = confidence_interval(a, b)
         return self.result
 
-    def variance_p(self, a, b):
-        self.result = population_variance(a, b)
+    def pop_var(self, a, b, c, d, e, f, g, h, j, k):
+        self.result = population_variance(a, b, c, d, e, f, g, h, j, k)
         return self.result
 
     def value(self, a, b):
