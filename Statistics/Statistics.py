@@ -65,8 +65,8 @@ class Statistics(Calculator):
         self.result = p_value(a, b)
         return self.result
 
-    def prop(self, a, b):
-        self.result = proportion(a, b)
+    def propor(self, a, b, c):
+        self.result = proportion(a, b, c)
         return self.result
 
     def samp_mean(self, a, b, c ):

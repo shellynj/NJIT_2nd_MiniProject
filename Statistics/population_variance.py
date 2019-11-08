@@ -13,7 +13,6 @@ def population_variance(a,b,c,d,e,f,g,h,j,k):
         j = int(j)
         k = int(k)
         population = [a,b,c,d,e,f,g,h,j,k]
-        #sample_size = len(sample)
         population_mean = (a+b+c+d+e+f+g+h+j+k)/len(population)
         x_minus_mean_sum = 0
         x_minus_mean_squared = 0
