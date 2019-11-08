@@ -123,7 +123,7 @@ class MyTestCase(unittest.TestCase):
         for row in test_data:
            self.assertEqual(self.statistics.stan_dev(row['Value 1'], row['Value 2'], row['Value 3'], row['Value 4'],
                                                  row['Value 5'], row['Value 6'], row['Value 7'], row['Value 8'],
-                                                 row['Value 9'], row['Value 10']), float(row['Result']))
+                                                 row['Value 9']), float(row['Result']))
            self.assertEqual(float(self.statistics.result), float(row['Result']))
 
 
