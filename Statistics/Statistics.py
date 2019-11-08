@@ -50,34 +50,36 @@ class Statistics(Calculator):
         self.result = score(a, b, c)
         return self.result
 
-    def population1(self, a, b):
-        self.result = correlation_coefficient(a, b)
+    def corr_coef(self, a, b, c, d, e, f, g, h, j, k):
+        self.result = correlation_coefficient(a, b, c, d, e, f, g, h, j, k)
         return self.result
 
-    def confidence(self, a, b):
-        self.result = confidence_interval(a, b)
+    def confidence(self, a, b, c, d, e, f, g, h, j, k):
+        self.result = confidence_interval(a, b, c, d, e, f, g, h, j, k)
         return self.result
 
-    def variance_p(self, a, b):
-        self.result = population_variance(a, b)
+    def pop_var(self, a, b, c, d, e, f, g, h, j, k):
+        self.result = population_variance(a, b, c, d, e, f, g, h, j, k)
         return self.result
 
     def value(self, a, b):
         self.result = p_value(a, b)
         return self.result
 
-    def prop(self, a, b):
-        self.result = proportion(a, b)
+    def propor(self, a, b, c):
+        self.result = proportion(a, b, c)
         return self.result
 
-    def s_mean(self, a, b):
-        self.result = sample_mean(a, b)
+    def samp_mean(self, a, b, c ):
+        self.result = sample_mean(a, b, c)
         return self.result
 
     def stan_dev(self, a, b, c, d, e, f, g, h, j, k):
          self.result = sample_standard_deviation(a, b, c, d, e, f, g, h, j, k)
          return self.result
 
-    def variance_1(self, a, b):
-        self.result = variance_of_sample_proportion(a, b)
+    def var_samp_propor(self, a, b, c, d, e, f, g, h, j, k):
+        self.result = variance_of_sample_proportion(a, b, c, d, e, f, g, h, j, k)
         return self.result
+
+

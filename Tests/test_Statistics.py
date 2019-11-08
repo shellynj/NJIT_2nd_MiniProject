@@ -69,27 +69,33 @@ class MyTestCase(unittest.TestCase):
            self.assertEqual(self.statistics.result, result)
 
     def test_correlation_coefficient(self):
-        test_data = CsvReader("Tests/Data/1.csv").data
+        test_data = CsvReader("Tests/Data/corr_coef.csv").data
         pprint(test_data)
         for row in test_data:
-           result = int(row['Result'])
-           self.assertEqual(self.statistics.population1(row['Value 1'], row['Value 2']), result)
+           result = float(row['Result'])
+           self.assertEqual(self.statistics.corr_coef(row['Value 1'], row['Value 2'], row['Value 3'], row['Value 4'],
+                                                 row['Value 5'], row['Value 6'], row['Value 7'], row['Value 8'],
+                                                 row['Value 9'], row['Value 10']), float(row['Result']))
            self.assertEqual(self.statistics.result, result)
 
     def test_confidence_interval(self):
-        test_data = CsvReader("Tests/Data/2.csv").data
+        test_data = CsvReader("Tests/Data/conf_inter.csv").data
         pprint(test_data)
         for row in test_data:
-           result = int(row['Result'])
-           self.assertEqual(self.statistics.confidence(row['Value 1'], row['Value 2']), result)
+           result = float(row['Result'])
+           self.assertEqual(self.statistics.confidence(row['Value 1'], row['Value 2'], row['Value 3'], row['Value 4'],
+                                                 row['Value 5'], row['Value 6'], row['Value 7'], row['Value 8'],
+                                                 row['Value 9'], row['Value 10']), float(row['Result']))
            self.assertEqual(self.statistics.result, result)
 
     def test_population_variance(self):
-        test_data = CsvReader("Tests/Data/3.csv").data
+        test_data = CsvReader("Tests/Data/pop_var.csv").data
         pprint(test_data)
         for row in test_data:
-           result = int(row['Result'])
-           self.assertEqual(self.statistics.variance_p(row['Value 1'], row['Value 2']), result)
+           result = float(row['Result'])
+           self.assertEqual(self.statistics.pop_var(row['Value 1'], row['Value 2'], row['Value 3'], row['Value 4'],
+                                                 row['Value 5'], row['Value 6'], row['Value 7'], row['Value 8'],
+                                                 row['Value 9'], row['Value 10']), float(row['Result']))
            self.assertEqual(self.statistics.result, result)
 
     def test_p_value(self):
@@ -101,21 +107,20 @@ class MyTestCase(unittest.TestCase):
            self.assertEqual(self.statistics.result, result)
 
     def test_proportion(self):
-        test_data = CsvReader("Tests/Data/5.csv").data
+        test_data = CsvReader("Tests/Data/propor.csv").data
         pprint(test_data)
         for row in test_data:
            result = int(row['Result'])
-           self.assertEqual(self.statistics.prop(row['Value 1'], row['Value 2']), result)
+           self.assertEqual(self.statistics.propor(row['Value 1'], row['Value 2'], row['Value 3']), result)
            self.assertEqual(self.statistics.result, result)
 
     def test_sample_mean(self):
-        test_data = CsvReader("Tests/Data/6.csv").data
+        test_data = CsvReader("Tests/Data/samp_mean.csv").data
         pprint(test_data)
         for row in test_data:
            result = int(row['Result'])
-           self.assertEqual(self.statistics.s_mean(row['Value 1'], row['Value 2']), result)
+           self.assertEqual(self.statistics.samp_mean(row['Value 1'], row['Value 2'], row['Value 3']), result)
            self.assertEqual(self.statistics.result, result)
-
 
     def test_sample_standard_deviation(self):
         test_data = CsvReader("Tests/Data/samp_stan_dev.csv").data
@@ -130,12 +135,18 @@ class MyTestCase(unittest.TestCase):
 
 
     def test_variance_of_sample_proportion(self):
-        test_data = CsvReader("Tests/Data/8.csv").data
+        test_data = CsvReader("Tests/Data/var_samp_propor.csv").data
         pprint(test_data)
         for row in test_data:
-           result = int(row['Result'])
-           self.assertEqual(self.statistics.variance_1(row['Value 1'], row['Value 2']), result)
+           result = float(row['Result'])
+           self.assertEqual(self.statistics.var_samp_propor(row['Value 1'], row['Value 2'], row['Value 3'], row['Value 4'],
+                                                 row['Value 5'], row['Value 6'], row['Value 7'], row['Value 8'],
+                                                 row['Value 9'], row['Value 10']), float(row['Result']))
            self.assertEqual(self.statistics.result, result)
 
-    if __name__ == '__main__':
+
+    def test_results_property(self):
+        self.assertEqual(self.statistics.result, 0)
+
+if __name__ == '__main__':
         unittest.main()
