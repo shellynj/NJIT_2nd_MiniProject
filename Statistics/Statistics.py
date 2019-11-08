@@ -53,8 +53,8 @@ class Statistics(Calculator):
         self.result = correlation_coefficient(a, b, c, d, e, f, g, h, j, k)
         return self.result
 
-    def confidence(self, a, b):
-        self.result = confidence_interval(a, b)
+    def confidence(self, a, b, c, d, e, f, g, h, j, k):
+        self.result = confidence_interval(a, b, c, d, e, f, g, h, j, k)
         return self.result
 
     def pop_var(self, a, b, c, d, e, f, g, h, j, k):
