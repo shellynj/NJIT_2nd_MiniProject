@@ -109,23 +109,23 @@ class MyTestCase(unittest.TestCase):
            self.assertEqual(self.statistics.result, result)
 
     def test_sample_mean(self):
-        test_data = CsvReader("Tests/Data/6.csv").data
+        test_data = CsvReader("Tests/Data/samp_mean.csv").data
         pprint(test_data)
         for row in test_data:
            result = int(row['Result'])
-           self.assertEqual(self.statistics.s_mean(row['Value 1'], row['Value 2']), result)
+           self.assertEqual(self.statistics.samp_mean(row['Value 1'], row['Value 2'], row['Value 3']), result)
            self.assertEqual(self.statistics.result, result)
 
 #   Michelle
     def test_sample_standard_deviation(self):
-        test_data = CsvReader('/src/samp_stan_dev.csv').data
+        test_data = CsvReader("Tests/Data/samp_stan_dev.csv").data
         pprint(test_data)
         for row in test_data:
-           result = int(row['Result'])
+           result = float(row['Result'])
            self.assertEqual(self.statistics.stan_dev(row['Value 1'], row['Value 2'], row['Value 3'], row['Value 4'],
                                                  row['Value 5'], row['Value 6'], row['Value 7'], row['Value 8'],
                                                  row['Value 9'], row['Value 10']), float(row['Result']))
-           self.assertEqual(float(self.statistics.result), float(row['Result']))
+           self.assertEqual(float(self.statistics.result), result)
 
 
 
