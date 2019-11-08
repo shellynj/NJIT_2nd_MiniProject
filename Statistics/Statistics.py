@@ -12,7 +12,7 @@ from Statistics.Population_variance import population_variance
 from Statistics.P_value import p_value
 from Statistics.Proportion import proportion
 from Statistics.Sample_mean import sample_mean
-from Statistics.Sample_standard_deviation import sample_standard_deviation
+from Statistics.sample_standard_deviation import sample_standard_deviation
 from Statistics.Variance_of_sample_proportion import variance_of_sample_proportion
 
 class Statistics(Calculator):
@@ -72,16 +72,6 @@ class Statistics(Calculator):
     def s_mean(self, a, b):
         self.result = sample_mean(a, b)
         return self.result
-
-    # original Mykola
-    #def sample(self, a, b):
-     #   self.result = sample_standard_deviation(a, b)
-      #  return self.result
-
-        # original Michelle
-  #  def stan_dev(self, a, b, c, d, e, f, g, h, j, k):
-  #      self.result = standard_deviation(a, b, c, d, e, f, g, h, j, k)
-  #      return self.result
 
      def stan_dev(self, a, b, c, d, e, f, g, h, j, k):
          self.result = sample_standard_deviation(a, b, c, d, e, f, g, h, j, k)
