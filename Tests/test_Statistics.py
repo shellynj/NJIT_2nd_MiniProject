@@ -121,7 +121,6 @@ class MyTestCase(unittest.TestCase):
         test_data = CsvReader('/src/samp_stan_dev.csv').data
         pprint(test_data)
         for row in test_data:
-           result = int(row['Result'])
            self.assertEqual(self.statistics.stan_dev(row['Value 1'], row['Value 2'], row['Value 3'], row['Value 4'],
                                                  row['Value 5'], row['Value 6'], row['Value 7'], row['Value 8'],
                                                  row['Value 9'], row['Value 10']), float(row['Result']))
