@@ -80,6 +80,35 @@ Each required section can be found by clicking on the Index links below.</br>
 #### Change Log:
 |  Date  | Details  |  
 |---|---|
+|  11/08/2019 | Michelle Boykins updated change log|
+|  11/08/2019 | Michelle Boykins fixed code error for format|
+|  11/08/2019 | Michelle Boykins deleted temporary/unused files|
+|  11/08/2019 | Michelle Boykins added function for p_value|
+|  11/08/2019 | Michelle Boykins added code for p_value unit test|
+|  11/08/2019 | Michelle Boykins added csv data file for p_value|
+|  11/08/2019 | Michelle Boykins added Function definition for p_value|
+|  11/08/2019 | Michelle Boykins fix Code Errors in Travis|
+|  11/08/2019 | Michelle Boykins fix Code Errors in Travis|
+|  11/08/2019 | Michelle Boykins fix Code Errors in Travis|
+|  11/08/2019 | Michelle Boykins Merged branch 'master' into master|
+|  11/08/2019 | Michelle Boykins update Code.|
+|  11/08/2019 | Michelle Boykins updated code sample_standard_deviation|
+|  11/08/2019 | Michelle Boykins updated sample_standard_deviation function defintion|
+|  11/08/2019 | Michelle Boykins Debug Travis Errors|
+|  11/07/2019 | Michelle Boykins added population_variance function definition and test file|
+|  11/07/2019 | Michelle Boykins added function definition and tests for variance of sample proportion|
+|  11/07/2019 | Michelle Boykins added var_samp_propor.csv data file for variance of sample p|
+|  11/07/2019 | Michelle Boykins added confidence_interval function definition and tests.|
+|  11/08/2019 | Michelle Boykins added population_variance function definition and test file|
+|  11/07/2019 | Michelle Boykins Corrected code in population variance py file|
+|  11/07/2019 | Michelle Boykins added Function Definition for Correlation Coefficient|
+|  11/07/2019 | Michelle Boykins updated sample_standard_deviation function definition and test|
+|  11/07/2019 | Michelle Boykins Merged pull request #2 from mykolatyniv/master |
+|  11/07/2019 | Michelle Boykins Merged branch 'master' into master|
+|  11/07/2019 | Michelle Boykins sample_standard_deviation function definition and test|
+|  11/07/2019 | Michelle Boykins Added samp_stan_dev.csv data file for sample standard deviation|
+|  11/07/2019 | Michelle Boykins Merge branch 'master' of https://github.com/shellynj/NJIT_2nd_MiniPro…|
+|  11/07/2019 | Michelle Boykins added Function Definition for Correlation Coefficient|
 |  11/06/2019  | Mykola Lupak fixed travis file|
 |  11/05/2019  | Michelle Boykins created pop_mean.csv file|
 |  11/04/2019  | Mykola Lupak updated Readme file | 
