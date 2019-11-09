@@ -99,11 +99,11 @@ class MyTestCase(unittest.TestCase):
            self.assertEqual(self.statistics.result, result)
 
     def test_p_value(self):
-        test_data = CsvReader("Tests/Data/4.csv").data
+        test_data = CsvReader("Tests/Data/p_value.csv").data
         pprint(test_data)
         for row in test_data:
            result = int(row['Result'])
-           self.assertEqual(self.statistics.value(row['Value 1'], row['Value 2']), result)
+           self.assertEqual(self.statistics.value(row['Value 1'], row['Value 2'], row['Value 3'], row['Value 4']), result)
            self.assertEqual(self.statistics.result, result)
 
     def test_proportion(self):
