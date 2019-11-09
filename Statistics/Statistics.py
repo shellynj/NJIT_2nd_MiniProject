@@ -62,8 +62,8 @@ class Statistics(Calculator):
         self.result = population_variance(a, b, c, d, e, f, g, h, j, k)
         return self.result
 
-    def value(self, a, b):
-        self.result = p_value(a, b)
+    def value(self, a, b, c, d):
+        self.result = p_value(a, b, c, d)
         return self.result
 
     def propor(self, a, b, c):
